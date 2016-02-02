@@ -17,18 +17,18 @@
 		}
 
 		@font-face {
-			font-family: 'VBFontIcons-RegularSVG';
-			src: url('VBFontIcons-Regular.svg#VBFontIcons-Regular') format('svg');
+			font-family: 'VBFontIcons-Regular MacSVG';
+			src: url('VBFontIcons-Regular Mac.svg#VBFontIcons-Regular Mac') format('svg');
 		}
 	
 		@font-face {
-			font-family: 'VBFontIcons-RegularTTF';
-			src: url('VBFontIcons-Regular.ttf') format('truetype');
+			font-family: 'VBFontIcons-Regular MacTTF';
+			src: url('VBFontIcons-Regular Mac.ttf') format('truetype');
 		} 
 		
 		@font-face {
-			font-family: 'VBFontIcons-RegularEOT';
-			src: url('VBFontIcons-Regular.eot');
+			font-family: 'VBFontIcons-Regular MacEOT';
+			src: url('VBFontIcons-Regular Mac.eot');
 		} 
 		
 			
@@ -66,7 +66,7 @@
 		}
 		
 		div {
-			font-family: 'VBFontIcons-RegularEOT', 'VBFontIcons-RegularTTF', 'VBFontIcons-RegularSVG';
+			font-family: 'VBFontIcons-Regular MacEOT', 'VBFontIcons-Regular MacTTF', 'VBFontIcons-Regular MacSVG';
 			margin: 0 0 30px 0;
 		}
 
@@ -106,6 +106,35 @@
 			font-size: 12pt;
 		}
 
+		span.swashes {
+			-moz-font-feature-settings: "swsh";
+			-ms-font-feature-settings: "swsh";
+			-webkit-font-feature-settings: "swsh";
+			font-feature-settings: "swsh";	
+		}
+		
+		span.alternates {	
+			-moz-font-feature-settings: "salt" 1;
+			-ms-font-feature-settings: "salt" 1;
+			-webkit-font-feature-settings: "salt" 1;
+			font-feature-settings: "salt" 1;
+		}
+		
+		span.smallcaps {
+			font-variant-caps: small-caps;
+			-moz-font-feature-settings: "smcp";
+			-ms-font-feature-settings: "smcp";
+			-webkit-font-feature-settings: "smcp";
+			font-feature-settings: "smcp";
+		}
+
+		span.capstosmallcaps {
+			font-variant-caps: all-small-caps;
+			-moz-font-feature-settings: "c2sc", "smcp";
+			-ms-font-feature-settings: "c2sc", "smcp";
+			-webkit-font-feature-settings: "c2sc", "smcp";
+			font-feature-settings: "c2sc", "smcp";
+		}
 	</style>
 	
 </head>
@@ -118,13 +147,18 @@
 
 <div>
 	<h2 class="big">Hamburgerfonstiv</h2>
-	<p class="big">VBFontIcons-Regular</p>
+	<p class="big">VBFontIcons-Regular Mac</p>
 </div>
 
 <div>
-	<h3 class="big">Handgloves & Mittoms</h3>
-	<p class="big">Bibliography</p>
-</p>
+	<h3 class="big"></h3>
+	<p class="big">
+		<span class="capstosmallcaps">OTF</span> features, 
+		<span class="swashes">like swashes </span>
+		<span class="alternates">alternates &amp; </span>
+		<span class="smallcaps">small caps</span>, can be added 
+		to the font.</span>
+	</p>
 </div>
 
 <div>
